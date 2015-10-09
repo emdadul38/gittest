@@ -1,0 +1,9 @@
+<input type="checkbox" id="checkAll" value="">Select All</label>
+<input type="checkbox" class="check" name="course_id[]">
+
+<script type="text/javascript">
+
+    $("#checkAll").click(function() {
+        $(".check").prop('checked', $(this).prop('checked'));
+    });
+</script>

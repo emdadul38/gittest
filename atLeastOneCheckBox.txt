@@ -1,0 +1,7 @@
+frmCourseOffer is a form id
+
+
+if(!$('#frmCourseOffer input[type="checkbox"]').is(':checked')){
+              alert("Please check at least one.");
+              return false;
+            }
