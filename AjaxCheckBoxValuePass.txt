@@ -1,0 +1,16 @@
+html part:
+
+<input type="checkbox" class="check" id="course" name="course[]" value="<?php echo $row->COURSE_ID; ?>
+
+ajax data access:
+
+var course = [];
+                $("input[name='course[]']:checked").each(function ()
+                {
+                    course.push(parseInt($(this).val()));
+                });
+
+
+Ajax data pass->
+
+data: {course: course}
